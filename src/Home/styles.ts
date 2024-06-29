@@ -1,25 +1,22 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  headerContainer: {
+    fontFamily: 'Inter_400Regular',
+    width: "100%",
+    height: 150,
+    paddingTop: 50,
+    alignItems: "center",
     backgroundColor: "#0D0D0D",
   },
-  containerHeader: {
-    width: "100%",
-    height: "20%",
-    alignItems: "center",
-    paddingTop: 30,
-  },
-  containerCenter: {
-    zIndex: 1,
-    top: -20,
-    flexDirection: "row",
-    width: "100%",
-  },
   logo: {},
+  textInputContainer: {
+    width: "100%",
+    flexDirection: "row",
+    backgroundColor: "#262626",
+  },
   dataInput: {
-    borderColor: "#5E60CE",
+    fontFamily: 'Inter_400Regular',
     flex: 1,
     fontSize: 16,
     color: "#808080",
@@ -29,6 +26,7 @@ export const styles = StyleSheet.create({
     padding: 10,
     height: 52,
     width: 70,
+    marginTop: -28,
     marginRight: 4,
     marginLeft: 20,
   },
@@ -40,24 +38,23 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginRight: 20,
+    marginTop: -28,
   },
-  containerContent: {
-    top: -45,
+  countContainer: {
     width: "100%",
-    height: "95%",
-    backgroundColor: "#1A1A1A",
-    alignItems: "center",
-  },
-  containerValues: {
-    top: 50,
-    width: "88%",
+    backgroundColor: "#262626",
     justifyContent: "space-between",
     flexDirection: "row",
+    paddingTop: 30,
+    paddingBottom: 20,
+    paddingRight: 20,
+    paddingLeft: 20,
   },
   containerCreated: {
     flexDirection: "row",
   },
   textCreated: {
+    fontFamily: 'Inter_400Regular',
     fontSize: 14,
     fontWeight: "bold",
     color: "#4EA8DE",
@@ -92,38 +89,17 @@ export const styles = StyleSheet.create({
     height: 19,
     textAlign: "center",
   },
+  separatorContainer: {
+    width: "100%",
+    backgroundColor: "#262626",
+  },
   separator: {
-    top: 70,
     height: 1,
-    width: "88%",
+    marginLeft: 22,
+    marginRight: 22,
     backgroundColor: "#333333",
   },
-  form: {
-    width: '88%',
-    top: 90,
+  flatList: {
+    backgroundColor: "#262626",
   },
-  card: {
-    backgroundColor: '#333333',
-    borderColor:'#808080',
-    borderWidth: 1,
-    borderRadius: 5,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    height: 64,
-    width: '100%',
-    alignItems: "center",
-  },
-  checkCard:{
-    paddingLeft: 10,
-    paddingRight: 10,
-  },
-  textCard:{
-   fontSize: 14,
-   color: '#F2F2F2',
-   width:'70%'
-  },
-  trashCard:{
-    paddingLeft: 10,
-    paddingRight: 10,
-  }
 });
