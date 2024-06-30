@@ -30,4 +30,7 @@ export const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 10,
   },
+  underlinedText: {
+    textDecorationLine: 'line-through',
+  },
 });

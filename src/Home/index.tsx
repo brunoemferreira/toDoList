@@ -34,14 +34,6 @@ export function Home() {
     setCountCreatedTask(countCreatedTask - 1);
   }
 
-  function CalculateLengthText(text: string) {
-    if (text.length <= 99) {
-      setTaskText(text);
-    } else {
-      Alert.alert("Erro", "Limite de 99 caracteres atingido!");
-    }
-  }
-
   function HandleTaskAdd() {
     if (tasks.includes(taskText)) {
       return Alert.alert(
@@ -58,8 +50,10 @@ export function Home() {
     Alert.alert("Remover", `Remover a Tarefa: ${task}?`, [
       {
         text: "Sim",
-        onPress: () =>
-          setTasks((prevState) => prevState.filter((item) => item !== task)),
+        onPress: () => {
+          handleMinTasks(),
+          setTasks((prevState) => prevState.filter((item) => item !== task))          
+        },
       },
       {
         text: "Não",
